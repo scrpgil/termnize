@@ -1,0 +1,55 @@
+html {
+    font-family: monaco, "Osaka",Consolas, "Lucida Console", monospace, arial, sans-serif;;
+    margin:10px;
+    color:#242424;
+}
+body{
+    max-width:600px;
+    margin:auto;
+}
+header{
+    width:100%;
+}
+ul {
+    list-style-type: none;
+}
+.tn__header{
+    width:100%;
+}
+.tn__header-logo{
+    text-align: left;
+    max-width:250px;
+}
+.tn__hero{
+    padding:25px 25px 5px;
+    text-align: center;
+    border-bottom:1px dashed #999;
+}
+.tn__hero-img{
+    margin-bottom:10px;
+}
+.tn__hero-img-blog{
+    margin-bottom:0px;
+    max-width:200px;
+}
+.tn__content-page-items{
+    padding:8px;
+}
+.tn__content-page-item{
+    padding:5px 12px;
+    width: 100%;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.tn__content-page-item-title{
+    display: inline-block;
+    width: 7em;
+}
+ul a:hover{
+    background-color:#eee;
+}
+.tn__footer{
+    border-top:1px dashed #999;
+    text-align: center;
+}
