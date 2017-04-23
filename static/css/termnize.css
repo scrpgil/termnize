@@ -10,9 +10,6 @@ body{
 header{
     width:100%;
 }
-ul {
-    list-style-type: none;
-}
 .tn__header{
     width:100%;
 }
@@ -33,18 +30,23 @@ ul {
     max-width:200px;
 }
 .tn__content-page-items{
+    display: table;
     padding:8px;
+    list-style-type: none;
 }
 .tn__content-page-item{
-    padding:5px 12px;
+    padding:8px 12px;
     width: 100%;
-    display: block;
+    display: table;
     color: inherit;
     text-decoration: none;
 }
 .tn__content-page-item-title{
-    display: inline-block;
-    width: 7em;
+    display: table-cell;
+    width: 6em;
+}
+.tn__content-page-item-detail{
+    display: table-cell;
 }
 ul a:hover{
     background-color:#eee;
@@ -52,4 +54,24 @@ ul a:hover{
 .tn__footer{
     border-top:1px dashed #999;
     text-align: center;
+}
+
+.tn__blog-archive-anchor{
+    color: inherit;
+    text-decoration: none;
+}
+.tn__blog-archive-title{
+    font-size: 2em;
+}
+.tn__blog-archive-date{
+    font-size: 100%;
+    color:#999;
+    padding-left:15px;
+    margin-bottom: 15px;
+}
+
+.tn__blog-date{
+    font-size: 100%;
+    color:#999;
+    margin-bottom: 15px;
 }

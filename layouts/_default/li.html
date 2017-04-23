@@ -1,3 +1,6 @@
-<li><a href="{{ .Permalink }}">
-  <span>{{ .Date.Format "02 January 2006" }}</span>{{ .Title }}
-</a></li>
+<a class="tn__blog-archive-anchor" href="{{ .Permalink }}">
+  <li>
+    <div class="tn__blog-archive-title">{{ .Title }}</div>
+    <div class="tn__blog-archive-date">{{ .Date.Format "04 Jan 2006" }}</div>
+  </li>
+</a>

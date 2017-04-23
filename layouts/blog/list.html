@@ -8,14 +8,10 @@
     </div>
     <article>
       <ul>
-        {{ range (.Paginate (where .Data.Pages "Section" "blog") 10).Pages }}
+        {{ range (where .Data.Pages "Section" "blog")}}
           {{ .Render "li" }}
         {{ end }}
       </ul>
     </article>
-    <nav>
-      <a href="#">前へ</a>
-      <a href="#">次へ</a>
-    </nav>
     {{ partial "footer.html" . }}
 {{ end }}
