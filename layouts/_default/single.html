@@ -5,6 +5,7 @@
     {{ partial "header.html" . }}
   <h1 class="tn__blog-title">{{ .Title }}</h1>
   <div class="tn__blog-date">Date:{{ .Date.Format "2006/01/02" }}</div>
+  <div class="tb__blog-content">
   {{ .Content }}
-  {{ partial "footer.html" . }}
+  </div>
 {{ end }}
