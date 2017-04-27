@@ -1,0 +1,7 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+<a class="tn__blog-archive-anchor" href="{{.Site.BaseURL}}/amp/{{ $url }}">
+  <li>
+    <div class="tn__blog-archive-title">{{ .Title }}</div>
+    <div class="tn__blog-archive-date">{{ .Date.Format "02 Jan 2006" }}</div>
+  </li>
+</a>

@@ -1,0 +1,17 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+    {{ partial "header.amp.html" . }}
+    <div class="tn__hero">
+      <div class="tn__blog-hero-img"><amp-img height="100" width="250" alt="hero" layout="responsive" src="/img/blog.svg"></amp-img></div>
+    </div>
+    <article>
+      <ul>
+        {{ range (where .Data.Pages "Section" "blog")}}
+          {{ .Render "li.amp" }}
+        {{ end }}
+      </ul>
+    </article>
+    {{ partial "footer.html" . }}
+{{ end }}

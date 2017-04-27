@@ -1,0 +1,44 @@
+{{ define "main" }}
+    {{ partial "header.amp.html" . }}
+    <div class="tn__hero">
+      <div class="tn__hero-img"><amp-img alt="hero" width="600" height="150" layout="responsive" src="/img/hero.svg"></amp-img></div>
+      <div class="tn__hero-msg">all accept and develop.</div>
+    </div>
+    <div class="tn__content">
+      <ul class="tn__content-page-items">
+        <a class="tn__content-page-item" href="/blog/amp">
+          <li>
+            <span class="tn__content-page-item-title">blog</span>
+            <span class="tn__content-page-item-detail">テクノロジー、ゲームについて</span>
+          </li>
+        </a>
+        <!--
+        <a class="tn__content-page-item" href="#">
+          <li>
+            <span class="tn__content-page-item-title">prodcut</span>
+            <span class="tn__content-page-item-detail">作ったもの</span>
+          </li>
+        </a>
+        -->
+        <a class="tn__content-page-item" href="https://twitter.com/scrpgil">
+          <li>
+            <span class="tn__content-page-item-title">twitter</span>
+            <span class="tn__content-page-item-detail">twitterアカウント</span>
+          </li>
+        </a>
+        <a class="tn__content-page-item" href="#">
+          <li>
+            <span class="tn__content-page-item-title">github</span>
+            <span class="tn__content-page-item-detail">githubアカウント</span>
+          </li>
+        </a>
+        <a class="tn__content-page-item" href="#">
+          <li>
+            <span class="tn__content-page-item-title">contact</span>
+            <span class="tn__content-page-item-detail">連絡方法</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    {{ partial "footer.html" . }}
+{{end}}

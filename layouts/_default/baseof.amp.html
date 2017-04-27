@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html amp>
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="http://scraplbuild.com/amp" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+    <style amp-custom>
+/* all */ html { font-family: monaco, "Osaka",Consolas, "Lucida Console", monospace, arial, sans-serif;; margin:10px; color:#242424; } body{ max-width:800px; margin:auto; } header{ width:100%; } /* header */ .tn__header{ width:100%; } .tn__header-logo{ text-align: left; max-width:250px; } /* hero */ .tn__hero{ padding:25px 0px 5px; text-align: center; border-bottom:1px dashed #999; } .tn__hero-img{ margin-bottom:10px; } /* top */ .tn__content-page-items{ display: table; padding:8px; list-style-type: none; } .tn__content-page-item{ padding:8px 12px; width: 100%; display: table; color: inherit; text-decoration: none; } .tn__content-page-item-title{ display: table-cell; width: 6em; } .tn__content-page-item-detail{ display: table-cell; } ul a:hover{ background-color:#eee; } /* footer */ .tn__footer{ border-top:1px dashed #999; text-align: center; } /* blog */ .tn__blog-hero-img{ margin-bottom:0px; max-width:200px; } .tn__blog-archive-anchor{ color: inherit; text-decoration: none; } .tn__blog-archive-title{ font-size: 2em; } .tn__blog-archive-date{ font-size: 100%; color:#999; padding-left:15px; margin-bottom: 15px; } .tn__blog-date{ font-size: 100%; color:#999; margin-bottom: 15px; } .tb__blog-content img{ width: 100%; }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  </head>
+  <body>
+    {{ with .Site.GoogleAnalytics }}
+    <amp-analytics type="googleanalytics" id="analytics-ga">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "{{ . }}"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+    {{ end }}
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+</html>
