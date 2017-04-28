@@ -2,7 +2,12 @@
 <html amp>
   <head>
     <meta charset="utf-8">
-    <link rel="canonical" href="http://scraplbuild.com/amp" />
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ if eq $url "blog/" }}
+    <link rel="canonical" href="{{.Site.BaseURL}}{{ $url }}/amp">
+    {{ else }}
+    <link rel="canonical" href="{{.Site.BaseURL}}amp/{{ $url }}">
+    {{ end }}
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
