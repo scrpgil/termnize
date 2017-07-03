@@ -89,3 +89,7 @@ ul a:hover{
     padding:.6em 1.2em;
     overflow-x:auto;
 }
+/* quotation */
+blockquote {
+    font-style:italic;
+}
