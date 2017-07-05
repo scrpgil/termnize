@@ -80,7 +80,8 @@ ul a:hover{
     margin-bottom: 15px;
 }
 .tb__blog-content img{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 /* Code Block */
 .listingblock{
