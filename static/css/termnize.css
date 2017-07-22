@@ -57,6 +57,12 @@ ul a:hover{
     text-align: center;
 }
 /* blog */
+.tb__blog-content{
+    line-height:1.7rem;
+}
+.tb__blog-content br{
+    line-height:2.4rem;
+}
 .tn__blog-hero-img{
     margin-bottom:0px;
     max-width:200px;
